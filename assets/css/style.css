@@ -397,17 +397,36 @@ h3 {
 .content-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.content-row ul {
-  flex-basis: 50%;
+.content-row li { flex-basis: 50%; }
+
+.row {
+  padding: 0 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 
-.content img{
-  flex-basis: 50%;
+.head {
+  font-weight: bolder;
+  font-size: 32px;
+  text-transform: capitalize;
 }
+
+.sub-head {
+  margin-top: 0.5em;
+  font-weight: lighter;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+
+.row li:nth-last-child(2) { margin: 2em 0; }
 
 .second .wrapper{
   display: flex;
